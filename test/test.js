@@ -11,7 +11,6 @@ describe('abi decoder', function () {
     expect(abis).to.be.an('array');
     expect(abis).to.have.length.of(0);
   });
-
   it('add abis', () => {
     abiDecoder.addABI(testABI);
     const abis = abiDecoder.getABIs();
